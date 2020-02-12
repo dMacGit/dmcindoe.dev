@@ -1,13 +1,31 @@
 version: 2.1
+workflows:
+  main:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+
 jobs:
   build:
     docker:
       - image: cibuilds/hugo:0.64
-    working_directory: ~/dmcindoedev
-    environment:
-      HUGO_BUILD_DIR: ~/dmcindoedev/public
-      HUGO_SRC_DIR: ~/dmcindoedev
-      - run: git submodule sync && git submodule update --init
+    steps:
+      - run: 
+          name: "Check Git installed"
+          command: sudo apt-get update && sudo apt-get install git
+      - run: 
+          name: "Sync Git Modules"
+          command: git submodule sync && git submodule update --init
+      - checkout
+      - run:
+          name:
+
+      
       - run:
           name: "Build Website with Hugo"
           command: HUGO_ENV=production hugo --buildDrafts --themesDir ~/dmcindoedev/themes
