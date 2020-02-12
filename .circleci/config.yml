@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: felicianotech/docker-hugo:0.50
+      - image: cibuilds/base:stable
     working_directory: ~/dmcindoedev
     environment:
       HUGO_BUILD_DIR: ~/dmcindoedev/public
