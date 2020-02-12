@@ -6,16 +6,17 @@ jobs:
     working_directory: ~/dmcindoedev
     environment:
       HUGO_BUILD_DIR: ~/dmcindoedev/public
-    steps:
-      - run: sudo apt-get update && sudo apt-get install git
-      - checkout
+      HUGO_SRC_DIR: ~/dmcindoedev
       - run: git submodule sync && git submodule update --init
-      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+      - run:
+          name: "Build Website with Hugo"
+          command: HUGO_ENV=production hugo --buildDrafts --themesDir ~/dmcindoedev/themes
+          working_directory: ~/dmcindoedev/public
       - add_ssh_keys:
           fingerprints:
             - "4d:8b:d8:b4:ae:7c:ed:2f:c1:ed:9c:dc:b0:d0:92:e3"
       - deploy:
-          name: deploy to Linode
+          name: "Deploy to Linode"
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
               rsync -azv -e "ssh -o StrictHostKeyChecking=no -p ${DEPLOY_PORT}" --delete ${HUGO_BUILD_DIR}/ ${DEPLOY_USER}@${DEPLOY_HOST}:~/dmcindoedev
