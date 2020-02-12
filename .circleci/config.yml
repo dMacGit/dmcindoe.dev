@@ -7,8 +7,15 @@ jobs:
     environment:
       HUGO_BUILD_DIR: ~/dmcindoedev/public
     steps:
+      - run: apk update && apk add git
       - checkout
+      - run: git submodule sync && git submodule update --init
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+      - run:
+          name: test our generated HTML files
+          command: |
+            htmlproofer $HUGO_BUILD_DIR --allow-hash-href --check-html \
+            --empty-alt-ignore --disable-external
       - add_ssh_keys:
           fingerprints:
             - "4d:8b:d8:b4:ae:7c:ed:2f:c1:ed:9c:dc:b0:d0:92:e3"
