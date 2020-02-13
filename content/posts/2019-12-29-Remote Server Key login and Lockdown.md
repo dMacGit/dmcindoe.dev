@@ -8,7 +8,7 @@ categories: ["Linux-Guide", "Home-Lab", "How-to"]
 ---
 # Quick guide on Pushing SSH keys to servers Securing SSH.
 
-In order to complete this, you will need to have made sure you have a user account setup with admin/root privileges. See my other Guide "[Admin account creation in Linux]()".
+In order to complete this, you will need to have made sure you have a user account setup with admin/root privileges. See my other Guide "[Admin account creation in Linux](https://dmcindoe.dev/posts/2019-12-29-admin-account-creation-in-linux/)".
 
 For this guide I will be using the account called **username**.
 
