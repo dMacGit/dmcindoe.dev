@@ -42,21 +42,23 @@ Proceed to Mount it in windows.
 
 ## Installing.
 
-Open up device manager. ![Device-Manager](images/Screen-vioserial-device-manager.png)
+Open up device manager. 
+
+![Device-Manager](/images/Screen-vioserial-device-manager.png)
 
 Find the new device called **"PCI Simple Communications Controller"** under **"Other devices"**
 
 Right click and **Update Driver**, then locate the Mounted ISO, open the **vioserial** folder, and find the folder that matches your version of Winows running on the VM. Run throught the installer.
 
-![ISO-Folders](images/Screen-vioserial-driver.png)
+![ISO-Folders](/images/Screen-vioserial-driver.png)
 
 This should now add the shown virtio-drivers in device manager.
 
-![virtio-device-man](images/Virtio-drivers_devicem_installed.png)
+![virtio-device-man](/images/Virtio-drivers_devicem_installed.png)
 
 Now you can install the **Qemu-agent**. Simply go to the **guest-agent** folder on the ISO and run that installer.
 
-![installing-guest-aget](images/installing-guest-agnet.png)
+![installing-guest-aget](/images/installing-guest-agnet.png)
 
 ## Testing.
 
@@ -72,4 +74,4 @@ Get-Service QEMU-GA
 
 This should return a result like below if installed correctly.
 
-![ps-testing](images/Qemu-Agent_windows_test.png)
+![ps-testing](/images/Qemu-Agent_windows_test.png)
