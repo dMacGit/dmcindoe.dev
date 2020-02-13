@@ -155,10 +155,12 @@ To create a commit, simply use the **commit** command with the **-m** message fl
 git commit -m "Description of change being commited"
 ```
 
-To create a commit with all recent changes (And skip the **add** command) use the **-a** commit flag.
+To create a commit with all recent changes; and the files with changes are already in the index, use the **-a** commit flag.
+
+This skips the **add** files process. (Note: as stated only works for files already added to index)
 
 ``` bash
-git commit -a -m "Description of new changes worthy of commit"
+git commit -am "Description of new changes worthy of commit"
 ```
 
 Lastly we can **push** the commit to the upstream remote repository.
