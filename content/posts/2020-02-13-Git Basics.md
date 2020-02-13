@@ -109,7 +109,7 @@ Sometimes you application/project may come with 3rd party dependencies from othe
 In this case, if you want to clone including these, you can use the "--recursive" flag.
 
 ``` bash
-$ git clone --recursive "git@github.com:user_name/your_remote_repo.git"
+$ git clone --recurse-submodules "git@github.com:user_name/your_remote_repo.git"
 ```
 
 ## Pull & Push from the Local machine.
