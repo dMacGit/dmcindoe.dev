@@ -1,4 +1,4 @@
-baseURL = "dmcindoe.dev"
+baseURL = "https://dmcindoe.dev"
 languageCode = "en-us"
 title = "dmcindoe.dev"
 theme = "material-design"
