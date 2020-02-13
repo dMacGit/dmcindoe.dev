@@ -17,7 +17,7 @@ I will be using Centos as the host environment, for Ubuntu, just replace "yum in
 
 You will need to grab and install the Samba client as well as the cifs-utils package.
 
-``` shell
+``` bash
 yum install samba-client samba-common cifs-utils -y
 ```
 
@@ -30,7 +30,7 @@ I mount remote shares in /mnt, so we will be using that dir in the guide.
 
 Navagate to /mnt and create a directory/folder that you want the share to be mounted in.
 
-``` shell
+``` bash
 sudo mkdir /winshare
 ```
 
@@ -38,18 +38,18 @@ Now we can edit the fstab file.
 
 Open /etc/fstab in you prefered editor (Im using nano).
 
-``` shell 
+``` bash 
 sudo nano /etc/fstab
 ```
 
 Now look over the below as a guide, before using the next step as an example:
 
-```
+``` bash
 //{Remote-host}/{share-directory} /mnt/{winshare} cifs uid={id},user={user-name},password={pass},iocharset=utf8 0 0
 ```
 
 An exmaple for a guest user, with read/write access to a /Movies share would be:
 
-```
+``` bash
 //192.168.2.200/Movies /mnt/winshare/Movies cifs uid=1000,user=guest,password=guest,iocharset=utf8 0 0
 ```

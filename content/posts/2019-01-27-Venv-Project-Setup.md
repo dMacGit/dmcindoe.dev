@@ -19,19 +19,19 @@ This is the concept of keeping your projects seperate, and contained, while hold
 ### Installing Virtual Environment ###
 
 You can use PIP to install.
-```
+``` bash
 $ pip install --user virtualenv
 ```
 
 ### Using Virtual Environment ###
 
 Once installed, you can create a virtual environment for/in a particular directiory
-```
+``` bash
 $ virtualenv /path/to/your/virtual/evn/
 ```
 Now you can activate the environment.
 
-```
+``` bash
 $ source /path/to/venv/bin/activate
 ```
 Note the ```/bin/activate```, this is the script to enter the environment.
@@ -56,7 +56,7 @@ Then we need to do some initial configuration before we can use it.
 
 You will want to add the command ``` source /usr/local/bin/virtualenvwrapper.sh ``` to your shell startup file, changing the path to ```virtualenvwrapper.sh``` depending on where it was installed by pip or your package manager.
 
-``` 
+``` bash
 $ export WORKON_HOME=~/Envs
 $ mkdir -p $WORKON_HOME
 $ source /usr/local/bin/virtualenvwrapper.sh
@@ -80,7 +80,7 @@ You can tell if you are in an active venv from the shell or command line.
 
 For example:
 
-```
+``` bash
 (emgee_core) phantom@Phantom-PC:/
 ```
 
@@ -93,7 +93,7 @@ Next simply navagate to your project home folder ``` $ cd /home/myProjectdir/  `
 
 Once in the project home, activate the venv for that project, then set the projectdir with ``` $ setvirtualenvproject ```:
 
-```
+``` bash
 $ workon yourEnvName
 $ setvirtualenvproject
 ```

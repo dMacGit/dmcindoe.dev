@@ -21,7 +21,7 @@ Now we can create a new user and assign sudo wrights. (Username, being the new u
 This will start the account creation process, and you should see similar output to below.
 In this first output it will prompt you to enter a password for the user.
 
-```shell script
+``` bash
 Adding user `username' ...
 Adding new group `username' (1001) ...
 Adding new user `username' (1001) with group `username' ...
@@ -34,7 +34,7 @@ passwd: password updated successfully
 
 Once done, it will ask for more details.
 
-```shell script
+``` bash
 Changing the user information for username
 Enter the new value, or press ENTER for the default
     Full Name []:
@@ -65,17 +65,17 @@ Run the "whoami" command under "sudo":
 
 If the user has "sudo" access, then the output should be "root"
 
-```shell script
+``` bash
 root
 ```
 
 In order to use "sudo", you will need to prefix the command with it, like normal.
 
-```shell script
+``` bash
 sudo ls -l /root
 ```
 And the first time you use it in a session, it will prompt you for the "sudo" password.
 
-```shell script
+``` bash
 [sudo] password for username
 ```

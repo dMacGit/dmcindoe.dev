@@ -16,11 +16,11 @@ For this guide I will be using the account called **username**.
 
 On your Local system generate your SSH key, run the following:
 
-``` shell
+``` bash
 ssh-keygen -t rsa # Change '-t rsa' to your prefered Cryptographic Algorithm, or leave blank
 ```
 
-``` shell
+``` bash
 username@local:~$ ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/username/.ssh/id_rsa): /home/username/.ssh/id_rsa
@@ -49,14 +49,14 @@ The key's randomart image is:
 
 Now that your key is generated, push it to the remote server:
 
-``` shell
+``` bash
 username@local:~$ ssh-copy-id -i ~/home/username/.ssh/id_rsa username@remote.machine
 ```
 This may prompt you to enter the password for your user, once done the key should be saved.
 
 Now that it is copied, it is good practise to test it.
 
-``` shell
+``` bash
 username@local:~$ ssh -i ~/.ssh/id_rsa username@remote.machine
 ```
 You should now be logged in, without needing to type the password.
@@ -66,13 +66,13 @@ You should now be logged in, without needing to type the password.
 Login to you're remote machine. Switch to root, if not already doing so.
 
 Locate the sshd_config file, in Debian, this should be under 
-``` shell
+``` bash
 /etc/ssh/sshd_config 
 ```
 
 Open this in the text **editor of you choice** (*Im using nanao in this example*)
 
-``` shell
+``` bash
 username@remote:~$ sudo nano /etc/ssh/sshd_config
 ```
 
@@ -88,12 +88,12 @@ Find and edit the following line peramters:
 
 Once saved, you'll need to reload the **ssh service**
 
-``` shell
+``` bash
 username@remote:~$ service ssh restart
 ```
 OR
 
-``` shell
+``` bash
 username@reomte:~$ systemctl restart ssh
 ```
 
@@ -103,21 +103,21 @@ Now that is done, try and test it by logging in; first as root, then by your new
 
 For root login test from local machine:
 
-``` shell
+``` bash
 username@local:~$ ssh root@remote
 Permission denied (publickey).
 ```
 
 And now by trying to force login by password
 
-``` shell
+``` bash
 username@local:~$ ssh username@remote -o PubKeyAuthentication=no
 Permission denied (publickey).
 ```
 
 Testing still works with SSH key:
 
-``` shell
+``` bash
 username@local:~$ ssh username@remote
 Last login: Sat Aug 24 03:20:32 2019 from local.example.org
 [username@remote ~]$
