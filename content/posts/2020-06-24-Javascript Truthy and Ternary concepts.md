@@ -4,21 +4,20 @@ date: "2020-06-24"
 tags: ["Development","Software","Web-dev","Javascript"]
 categories: ["Development","Software","Web-dev","Javascript"]
 ---
-# Summary Notes on Truthy & Ternary Concepts in Javascript
 
 ## Truthy & Falsy Evaluations
 
-Taking the notion that when a variable is created, even without being assigned a value, it can still be evaluated. Most un-assigned values to variables are evaluted as `false` and thus can be said to be `falsy`.
+Taking the notion that when a variable is created, even without being assigned a value, it can still be evaluated. Most un-assigned values to variables are evaluted as **false** and thus can be said to be **Falsy**.
 See below list for examples. 
-When a variable is assigned a value, (Not matching the exmaples from the list) the variable is evaluated to `true`. And it can be said that the variable is `Truthy`.
+When a variable is assigned a value, (Not matching the exmaples from the list) the variable is evaluated to **true**. And it can be said that the variable is **Truthy**.
 
-Example of `falsy` evaluated values are as follows:
+Example of **Falsy** evaluated values are as follows:
 
-- `0`
-- Empty strings like `""` or `''`
-- `null` which represents when there is no value at all
-- `undefined` which represents when declared variable lacks a value.
-- `NaN`, or Not a Number.
+- **0**
+- Empty strings like **""** or **''**
+- **null** which represents when there is no value at all
+- **undefined** which represents when declared variable lacks a value.
+- **NaN**, or Not a Number.
 
 **Example Code Block**
 
@@ -26,7 +25,6 @@ Example of `falsy` evaluated values are as follows:
 let favoritePhrase = ''; // Evaluates to 'false'. Is Falsy
 
 // The Else clause will trigger as the variable 'favouritePhrase' is falsy, and the conditional evaluates to false. 
-
 // if (favoritePhrase) === if ('') === if (false)
 
 if (favoritePhrase) {
@@ -38,9 +36,8 @@ if (favoritePhrase) {
 
 ## Truthy and Falsy Assignment
 
-You can write shorthand code for some forms of variable assignements, using logical operators, and `Short-circuit evaluation`.
-
-For example if you take the code block for `username` assignment to a variable.
+You can write shorthand code for some forms of variable assignements, using logical operators, and **Short-circuit evaluation**.
+For example if you take the code block for **username** assignment to a variable.
 
 ``` javascript 
 let defaultName;
@@ -57,7 +54,7 @@ Using logical operation as well as Truthy & Falsy assinment priciples whe can si
 let defaultName = username || 'Stranger';
 ```
 
-Because `||` or statements check the left-hand condition first, the variable `defaultName` will be assigned the actual value of `username` if is `truthy`, and it will be assigned the value of `'Stranger'` if `username` is `falsy`. This concept is also referred to as **short-circuit evaluation**.
+Because **||** or statements check the left-hand condition first, the variable **defaultName** will be assigned the actual value of **username** if is **truthy**, and it will be assigned the value of **'Stranger'** if **username** is **falsy**. This concept is also referred to as **short-circuit evaluation**.
 
 **Another Example Block**
 
