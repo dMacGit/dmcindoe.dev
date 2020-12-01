@@ -16,13 +16,13 @@ You can use multi-line strings and string interpolation features (Expression & v
 
 ## Table of Contents
 
-- [Syntax](#Syntax)
-- [Description](#Description)
-- [Multi-line strings](#Multi-line-strings)
-- [Expression Interpolation](#Expression-Interpolation)
-- [Nesting Templates](#Nesting-Templates)
-- [Tagged Templates](#Tagged-Templates)
-- [Raw strings](#Raw-strings)
+- [Syntax](##Syntax)
+- [Description](##Description)
+- [Multiline strings](##Multiline-strings)
+- [Expression Interpolation](##Expression-Interpolation)
+- [Nesting Templates](##Nesting-Templates)
+- [Tagged Templates](##Tagged-Templates)
+- [Raw strings](##Raw-strings)
 
 
 ## Syntax
@@ -63,7 +63,7 @@ To escape a backtick in a template literal, put a backslash (`\`) before the bac
 `\`` === '`' // --> true
 ```
 
-## Multi-line strings
+## Multiline strings
 
 Examples of using Template Literals with multi-line strings.
 
