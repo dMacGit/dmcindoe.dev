@@ -5,7 +5,7 @@ tags: ["Development","Software","Web-dev","Javascript, Template Literals, Templa
 categories: ["Development","Software","Web-dev","Javascript"]
 ---
 
-# Javascript Template Literals (Template Strings)
+# Javascript Template Literals
 
 >Template literals are string literals allowing embedded expressions.
 
