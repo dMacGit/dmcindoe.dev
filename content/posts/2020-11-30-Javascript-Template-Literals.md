@@ -16,13 +16,13 @@ You can use multi-line strings and string interpolation features (Expression & v
 
 ## Table of Contents
 
-- [Syntax](##Syntax)
-- [Description](##Description)
-- [Multiline strings](##Multiline-strings)
-- [Expression Interpolation](##Expression-Interpolation)
-- [Nesting Templates](##Nesting-Templates)
-- [Tagged Templates](##Tagged-Templates)
-- [Raw strings](##Raw-strings)
+- [Syntax](#Syntax)
+- [Description](#Description)
+- [Multiline strings](#Multiline-strings)
+- [Expression Interpolation](#Expression-Interpolation)
+- [Nesting Templates](#Nesting-Templates)
+- [Tagged Templates](#Tagged-Templates)
+- [Raw strings](#Raw-strings)
 
 
 ## Syntax
