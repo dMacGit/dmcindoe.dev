@@ -1,3 +1,9 @@
 [submodule "themes/material-design"]
 	path = themes/material-design
 	url = https://github.com/pdevty/material-design.git
+[submodule "theme/loveit"]
+	path = theme/loveit
+	url = https://github.com/dillonzq/LoveIt.git
+[submodule "themes/loveit"]
+	path = themes/loveit
+	url = https://github.com/dillonzq/LoveIt.git
