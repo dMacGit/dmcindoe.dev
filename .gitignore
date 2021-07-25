@@ -1,3 +1,4 @@
 public/
-config.tml
+themes/
+config.toml
 .circleci
