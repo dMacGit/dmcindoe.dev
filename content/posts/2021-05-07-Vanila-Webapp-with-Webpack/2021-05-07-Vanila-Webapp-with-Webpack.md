@@ -2,14 +2,14 @@
 weight: 1
 title: 'Vanila Webapp with Webpack'
 date: 2021-05-07T15:59:01+13:00
-omit_header_text: true
 draft: false
 author: "David"
 authorlink: ""
+permalink: /posts/2021/05/07/Vanila-Webapp-with-Webpack
 description: "Basic Guide to A Vanilla Javascript App with Webpack"
 resources:
-- name: "Webpack-Diagram"
-  src: "Webpack_Diagram.png"
+- name: Webpack_Diagram
+  src: Webpack_Diagram.png
 tags: ["Development","Software","Web-dev","Web-app","Webpack"]
 categories: ["Development","Software","Web-dev","Web-app","Webpack"]
 lightgallery: true
