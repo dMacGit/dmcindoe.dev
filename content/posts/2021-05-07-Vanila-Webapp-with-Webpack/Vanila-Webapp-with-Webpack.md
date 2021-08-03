@@ -7,9 +7,9 @@ author: "David"
 authorlink: ""
 permalink: /posts/2021/05/07/Vanila-Webapp-with-Webpack
 description: "Basic Guide to A Vanilla Javascript App with Webpack"
-resources:
-- name: Webpack_Diagram
-  src: Webpack_Diagram.png
+featuredImage: "/images/Webpack_Diagram.png"
+featuredImagePreview: "/images/Webpack_Diagram.png"
+
 tags: ["Development","Software","Web-dev","Web-app","Webpack"]
 categories: ["Development","Software","Web-dev","Web-app","Webpack"]
 lightgallery: true
@@ -18,9 +18,8 @@ toc:
 ---
 Basic Guide to A Vanilla Javascript App with Webpack
 <!--more-->
-# Vanila Webapp with Webpack
 
-This document will walk through setting up a vanilla javascript, html, and css web app with Webpack.
+**This document will walk through setting up a vanilla javascript, html, and css web app with Webpack.**
 
 ## Contents
 
@@ -361,7 +360,7 @@ we can run this with a similar command to the **dev** script. `npm run build`
 
 Just for reference the final `package.json` file should look similar to this:
 
-> Note: Removed some config code marked /* ... */ for brevity. *This code is generated when you run **npm init***.
+> I removed some config code marked /\* ... \*/ for brevity. *This code is generated when you run* *__npm init__*.
 
 ``` json
 {
