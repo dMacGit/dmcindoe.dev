@@ -1,9 +1,21 @@
 ---
 title: 'Javascript Template Literals'
-date: "2020-11-30"
+date: 2020-11-30
+draft: false
+author: "David"
+authorlink: ""
+description: "Quick overview of Javascript Template literals"
+featuredImage: "/images/js-template-literals.png"
+featuredImagePreview: "/images/js-template-literals.png"
+
 tags: ["Development","Software","Web-dev","Javascript, Template Literals, Template Strings"]
 categories: ["Development","Software","Web-dev","Javascript"]
+lightgallery: true
+toc:
+  auto: true
 ---
+A quick dive into Javascript template literals!
+<!--more-->
 
 # Javascript Template Literals
 

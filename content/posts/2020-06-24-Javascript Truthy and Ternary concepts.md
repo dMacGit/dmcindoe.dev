@@ -1,10 +1,19 @@
 ---
 title: 'Summary Notes on Truthy & Ternary Concepts in Javascript'
-date: "2020-06-24"
+draft: false
+author: "David"
+date: 2020-06-24
+authorlink: ""
+description: "Some notes on Truthy & Ternary Concepts"
+featuredImage: "/images/js-logo.png"
+featuredImagePreview: "/images/js-logo.png"
 tags: ["Development","Software","Web-dev","Javascript"]
 categories: ["Development","Software","Web-dev","Javascript"]
+toc:
+  auto: true
 ---
-
+A breakdown of Truthy & Ternary Concepts in Javascript.
+<!--more-->
 ## Truthy & Falsy Evaluations
 
 Taking the notion that when a variable is created, even without being assigned a value, it can still be evaluated. Most un-assigned values to variables are evaluted as **false** and thus can be said to be **Falsy**.
