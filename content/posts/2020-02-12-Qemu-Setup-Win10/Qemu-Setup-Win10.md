@@ -1,7 +1,14 @@
 ---
+weight: 1
 title: 'How to Setup Proxmox and Qemu in Windows 10'
-date: 2020-02-12
+date: 2020-02-12T15:59:01+13:00
+draft: false
+author: "David"
+authorlink: ""
 permalink: /posts/2020/02/12/Qemu-Setup-Win10/
+description: "Setting up Qemu-agent in Win10"
+featuredImage: "/images/windows10.png"
+featuredImagePreview: "/images/windows10.png"
 
 tags:
   - Proxmox
@@ -15,7 +22,14 @@ categories:
   - Proxmox
   - Qemu
   - Windows
+
+toc:
+  auto: true
 ---
+
+How to add a Qemu agent in a Windows 10 VM.
+<!--more-->
+
 
 # How to Setup Proxmox and Qemu in Windows 10.
 
