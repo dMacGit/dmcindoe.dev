@@ -8,7 +8,7 @@ description: "Quick overview of Javascript Template literals"
 featuredImage: "/images/js-template-literals.png"
 featuredImagePreview: "/images/js-template-literals.png"
 
-tags: ["Development","Software","Web-dev","Javascript, Template Literals, Template Strings"]
+tags: ["Development","Software","Web-dev","Javascript", "Template Literals", "Template Strings"]
 categories: ["Development","Software","Web-dev","Javascript"]
 lightgallery: true
 toc:
@@ -28,13 +28,15 @@ You can use multi-line strings and string interpolation features (Expression & v
 
 ## Table of Contents
 
-- [Syntax](#Syntax)
-- [Description](#Description)
-- [Multiline strings](#Multiline-strings)
-- [Expression Interpolation](#Expression-Interpolation)
-- [Nesting Templates](#Nesting-Templates)
-- [Tagged Templates](#Tagged-Templates)
-- [Raw strings](#Raw-strings)
+- [Javascript Template Literals](#javascript-template-literals)
+  - [Table of Contents](#table-of-contents)
+  - [Syntax](#syntax)
+  - [Description](#description)
+  - [Multiline strings](#multiline-strings)
+  - [Expression Interpolation](#expression-interpolation)
+  - [Nesting Templates](#nesting-templates)
+  - [Tagged Templates](#tagged-templates)
+  - [Raw strings](#raw-strings)
 
 
 ## Syntax
