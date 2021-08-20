@@ -2,7 +2,9 @@
 title: 'Changing Backgrounds In Ubuntu Disco'
 date: 2019-06-14
 permalink: /posts/2019/06/14/Changing-Backgrounds-In-Ubuntu-Disco/
-
+description: "Changing Backgrounds In Ubuntu Disco"
+featuredImage: "/images/Ubuntu-19-10-Wallpaper.jpg"
+featuredImagePreview: "/images/Ubuntu-19-10-Wallpaper.jpg"
 
 tags:
   - Linux
