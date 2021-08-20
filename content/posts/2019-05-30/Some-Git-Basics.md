@@ -2,6 +2,10 @@
 title: 'Some Git Basics'
 date: 2019-05-30
 permalink: /posts/2019/05/30/Some-Git-Basics/
+description: "Some Git Basics"
+featuredImage: "/images/git.jpg"
+featuredImagePreview: "/images/git.jpg"
+
 
 tags:
   - Development
@@ -15,9 +19,14 @@ categories:
   - How-To
   - Git
   - Programming
+toc:
+  auto: true
 ---
 
-# Some Git versionings basics
+An Introduction to Git
+<!--more-->
+
+# Some Git Versioning basics
 
 Here are some Git versioning basic how to's for creating and updating a new project or repository.
 More detailed guides and reference materials can be viewed at __https://git-scm.com__.

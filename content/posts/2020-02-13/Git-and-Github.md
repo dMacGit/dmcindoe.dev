@@ -1,16 +1,30 @@
 ---
-title: 'Some Git basics and Github'
-date: "2020-02-13"
+title: 'Getting started with Git and Github'
+date: 2020-02-13
+
+permalink: /posts/2020/02/13/Git-and-Github/
+description: "Getting started with Git and Github"
+featuredImage: "/images/gitngithub.png"
+featuredImagePreview: "/images/gitngithub.png"
+
 tags: 
     - Development
     - Git
     - Github
+    - Versioning
+    - Repo
 
 categories: 
     - How-To
     - Git
     - Development
+
+toc:
+  auto: true
 ---
+
+An Introduction to Git and Github
+<!--more-->
 
 # Some Git basics using Github.
 
