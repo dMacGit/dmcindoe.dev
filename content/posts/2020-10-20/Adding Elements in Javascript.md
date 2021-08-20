@@ -96,9 +96,11 @@ var parentNode = document.getElementById("parentNode");
 parentNode.appendChild(newNode);
 ```
 
-### Bringing things together
+## Bringing things together
 
 Going back to our example setup. We want to add **Rows** to the **tbody** *Element*.
+
+### Create Row Node
 
 As before, create the New Node using `createElement` function.
 First create the New Row Node:
@@ -107,6 +109,8 @@ First create the New Row Node:
 //First Create the Table Row Node
 var newTableRow = document.createElement("tr");
 ```
+
+### Create the Header Node
 
 We need to also create a header Node, for the Row Node:
 
@@ -126,6 +130,8 @@ newRowHeader.innerText = "Row 1";
 newTableRow.appendChild(newRowHeader);
 ```
 
+### Data Nodes
+
 Now we proceed to create the Data Nodes, and give them values:
 
 ``` javascript
@@ -144,6 +150,8 @@ newTableRow.appendChild(newRow1);
 newTableRow.appendChild(newRow2);
 newTableRow.appendChild(newRow3);
 ```
+
+### Add to DOM
 
 Now to add it to the DOM, we append it to the **tbody** element we setup at the beginning:
 
