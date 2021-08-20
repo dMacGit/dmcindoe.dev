@@ -31,9 +31,9 @@ How to add a Qemu agent in a Windows 10 VM.
 <!--more-->
 
 
-# How to Setup Proxmox and Qemu in Windows 10.
+# Setup Qemu agent in Windows 10.
 
-My particular use case for having Qemu setup, is so I can make use of Proxmox backup shceduling.
+My particular use case for having Qemu setup, is so I can make use of Proxmox backup scheduling.
 All my VM's need to run Qemu to do this, without errors.
 
 This is a brief guide to downloading, installing, and testing it on a Windows 10 VM.
@@ -62,7 +62,7 @@ Open up device manager.
 
 Find the new device called **"PCI Simple Communications Controller"** under **"Other devices"**
 
-Right click and **Update Driver**, then locate the Mounted ISO, open the **vioserial** folder, and find the folder that matches your version of Winows running on the VM. Run throught the installer.
+Right click and **Update Driver**, then locate the Mounted ISO, open the **vioserial** folder, and find the folder that matches your version of Windows running on the VM. Run through the installer.
 
 ![ISO-Folders](/images/Screen-vioserial-driver.png)
 
@@ -72,7 +72,7 @@ This should now add the shown virtio-drivers in device manager.
 
 Now you can install the **Qemu-agent**. Simply go to the **guest-agent** folder on the ISO and run that installer.
 
-![installing-guest-aget](/images/installing-guest-agnet.png)
+![installing-guest-agent](/images/installing-guest-agnet.png)
 
 ## Testing.
 

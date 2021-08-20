@@ -10,9 +10,8 @@ description: "Basic Automation of Proxmox with Ansible"
 featuredImage: "/images/Ansible-Proxmox.png"
 featuredImagePreview: "/images/Ansible.png"
 
-tags: ["Devops","Linux","Containers","VM's","Ansible","Automation","Proxmox","LXC","Proxmoxer","Python3"]
-categories: ["Devops","Linux","Containers","VM's","Ansible","Automation","Proxmox"]
-lightgallery: true
+tags: ["Linux","Containers","Ansible","Automation","Proxmox","Proxmoxer"]
+categories: ["How-To","DevOps","Ansible","Automation","Proxmox"]
 toc:
   auto: false
 ---

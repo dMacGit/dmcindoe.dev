@@ -1,18 +1,18 @@
 ---
 weight: 1
-title: 'Vanila Webapp with Webpack'
+title: 'Vanilla Webapp with Webpack'
 date: 2021-05-07T15:59:01+13:00
 draft: false
 author: "David"
 authorlink: ""
-permalink: /posts/2021/05/07/Vanila-Webapp-with-Webpack
+permalink: /posts/2021/05/07/Vanilla-Webapp-with-Webpack
 description: "Basic Guide to A Vanilla Javascript App with Webpack"
 featuredImage: "/images/Webpack_Diagram.png"
 featuredImagePreview: "/images/Webpack_Diagram.png"
 
-tags: ["Development","Software","Web-dev","Web-app","Webpack"]
-categories: ["Development","Software","Web-dev","Web-app","Webpack"]
-lightgallery: true
+tags: ["Development","Software","Web-app","Webpack"]
+categories: ["How-To","Development","Software","Web-app","Webpack"]
+lightgallery: false
 toc:
   auto: false
 ---
@@ -23,18 +23,19 @@ Basic Guide to A Vanilla Javascript App with Webpack
 
 ## Contents
 
-- [Install Node.js](#Install-Node.js)
-- [Configure Node Project](#Configure-Node-Project)
-- [Installing Webpack](#Installing-Webpack)
-- [Project Structure](#Project-Structure)
-- [Setting up Webpack](#Setting-up-Webpack)
-  - [Html loader](#Html-loader)
-  - [CSS/SASS loader](#CSS/SASS-loader)
-  - [Image Loader](#Image-Loader)
-  - [loading ES Modules](#loading-ES-Modules)
-- [Complete Webpack config](#Complete-Webpack-config)
-- [Package.json and Webpack](#Package.json-and-Webpack)
-- [Final Package.json](#Final-Package.json)
+- [Contents](#contents)
+- [Install Node.js](#install-nodejs)
+- [Configure Node Project](#configure-node-project)
+- [Installing Webpack](#installing-webpack)
+- [Project Structure](#project-structure)
+- [Setting up Webpack](#setting-up-webpack)
+  - [Html loader](#html-loader)
+  - [CSS/SASS loader](#csssass-loader)
+  - [Image Loader](#image-loader)
+  - [loading ES Modules](#loading-es-modules)
+- [Complete Webpack config](#complete-webpack-config)
+- [Package.json and Webpack](#packagejson-and-webpack)
+- [Final Package.json](#final-packagejson)
 
 ## Install Node.js
 
