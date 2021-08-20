@@ -3,3 +3,4 @@ themes/
 config.toml
 .circleci
 .gitmodules
+.vscode
